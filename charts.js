@@ -137,14 +137,25 @@ function buildCharts(sample) {
         value: washFreq,
         title: { text: "Belly Button Washing Frequency" + '<br>' + "Scrubs per Week"},
         type: "indicator",
-        mode: "gauge+number"
+        mode: "gauge+number",
+        gauge: {
+          axis: {range: [null,10], tickwidth: 1, tickcolor: "black", tickvals: [0, 2, 4, 6, 8, 10]},
+          bar: { color: "black"},
+          steps: [
+            {range: [0, 2], color: "red"},
+            {range: [2, 4], color: "orange"},
+            {range: [4, 6], color: "yellow"},
+            {range: [6, 8], color: "YellowGreen"},
+            {range: [8, 10], color: "green"},
+          ]
+        }
       }
      
     ];
     
     // DELIVERABLE 3. Step 5. Create the layout for the gauge chart.
     var gaugeLayout = { 
-     width: 450,
+     width: 500,
      height: 370,
      margin: { t:0, b:0}
     };
