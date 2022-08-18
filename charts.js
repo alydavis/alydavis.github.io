@@ -84,7 +84,7 @@ function buildCharts(sample) {
     // Hint: Get the the top 10 otu_ids and map them in descending order  
     //  so the otu_ids with the most bacteria are last. 
 
-    var yticks = ids.slice(0,10).map(otuID => "OTU").reverse()
+    var yticks = ids.slice(0,10).map(otuID => `OTU ${otuID}`).reverse()
     var xticks = values.slice(0,10).reverse()
     var graphLabels = labels.slice(0.10).reverse();
 
@@ -98,9 +98,8 @@ function buildCharts(sample) {
   }]
     // 9. Create the layout for the bar chart. 
     var barLayout = {
-      title: "Top 10 Microbial Species in Belly Buttons",
-      xaxis: {title: "Bacteria Sample Values"},
-      yaxis: {title: "OTU IDs"},
+      title: "Top 10 Bacterial Cultures Found",
+      xaxis: {title: "Sample Value"},
       margin: { t:30, l: 150}
     };
     // 10. Use Plotly to plot the data with the layout. 
@@ -112,22 +111,21 @@ function buildCharts(sample) {
       x: ids,
       y: values,
       text: labels,
-      mode: "markers",
-      Marker: {
+      mode: 'markers',
+      marker: {
         color: ids,
-        size: values,
+        size: values
         }
     }
     ];
 
     // DELIVERABLE 2. Step 2. Create the layout for the bubble chart.
-    var bubbleLayout = [
-      {
-      margin: { t: 0},
-      xaxis: {title: "OTU ID"},
-      hovermode: "closest",
-      }
-    ];
+    var bubbleLayout = {
+      title: 'Bacteria Cultures Per Sample',
+      xaxis: {title: 'OTU ID'},
+      hovermode: "closest"
+    };
+
     // DELIVERABLE 2. Step 3. Use Plotly to plot the data with the layout.
     Plotly.newPlot("bubble", bubbleData, bubbleLayout); 
 
@@ -137,7 +135,7 @@ function buildCharts(sample) {
       {
         domain: {},
         value: washFreq,
-        title: { text: "Belly Button Washing Frequency <h2> Scrubs per Week </h2>"},
+        title: { text: "Belly Button Washing Frequency" + '<br>' + "Scrubs per Week"},
         type: "indicator",
         mode: "gauge+number"
       }
@@ -146,8 +144,8 @@ function buildCharts(sample) {
     
     // DELIVERABLE 3. Step 5. Create the layout for the gauge chart.
     var gaugeLayout = { 
-     width: 300,
-     height: 300,
+     width: 450,
+     height: 370,
      margin: { t:0, b:0}
     };
 
