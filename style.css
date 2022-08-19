@@ -1,0 +1,10 @@
+body{
+    background-color: lavender;
+}
+
+.jumbotron{
+    background: url("images/cdc-LiNIONbajm4-unsplash2.jpg") no-repeat center center;
+    opacity: 0.85;
+    width:max-content;
+    height:auto;
+}
