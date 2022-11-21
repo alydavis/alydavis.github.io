@@ -23,4 +23,8 @@ How to use interactivity to enhance your visualizations. Interactive features li
 ## Building the Dashboard
 It is important that the final visualization is engaging and dynamic 
 
+![Dashboard](screencapture-alydavis-github-io-index-html-2022-11-21-13_26_57.png)
+
+
+
 ### Summary
