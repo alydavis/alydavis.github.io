@@ -1,5 +1,8 @@
-# Plotly Challenge 
+# Belly Button Biodiversity
 
-[Deployed Page](https://alydavis.github.io/index.html)
+An interactive [dashboard](https://alydavis.github.io/index.html) exploring Belly Button Biodiversity data.
 
-An interactive dashboard exploring Belly Button Biodiversity data.
+## About the Project
+
+
+## Built With
