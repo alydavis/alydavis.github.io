@@ -3,7 +3,7 @@
 An interactive [dashboard](https://alydavis.github.io/index.html) exploring Belly Button Biodiversity data.
 
 ## About the Project
-The human body is home to many different types of bacteria. A single belly button can be home to 20-100 different species. With so much complex data, what is the best way to visualize the types of bacteria in the body? This project utilizes a sample data set from belly button bacteria. (Data source: ) Data is parsed and transformed with JavaScript, and an interactive HTML dashboard displays the results. Participants can view their species based on sample ID (as the data is anonymized).
+The human body is home to many different types of bacteria. A single belly button can be home to 20-100 different species. With so much complex data, what is the best way to visualize the types of bacteria in the body? This project utilizes a sample data set from belly button bacteria. (Data source: ) Data is parsed and transformed with JavaScript, and an interactive HTML dashboard displays the results. The data is anonymized, so participants can view their species based on selecting their ID number in the drop down filter.
 
 ## Tools and Resources
 - JavaScript
